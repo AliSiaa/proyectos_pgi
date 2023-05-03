@@ -127,8 +127,8 @@ header {
 }
 
 .imagen {
-	width: 320px;
-	height: auto;
+	width: 70%;
+    height: 400px;
 	/* margin-bottom: 20px; */
 	clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
 	/* clip-path: polygon(24% 7%, 75% 7%, 100% 50%, 85% 73%, 14% 73%, 0% 50%); */
@@ -138,16 +138,22 @@ header {
 	display: flex;
 }
 
+.margen-r-30{
+margin-right: 25px;
+}
+
 .espacio {
+	display: flex;
 	margin-top: 60px;
 }
 
 .numero {
-	margin-right: 20px;
+	/* margin-right: 20px; */
 	font-size: 150px;
 	font-weight: bold;
 	text-transform: none;
 	line-height: 1.2em;
+	width: 210px;
 	/* pra separar los nuemros */
 }
 
@@ -261,7 +267,8 @@ header {
 }
 
 .carruselImagenes {
-	margin-top: 50px;
+	margin-top: -40px;
+	/* esto se puede hacer? */
 }
 
 .imagenes {
@@ -409,6 +416,10 @@ form select {
 	line-height: 1;
 }
 
+.descripcion{
+	margin-bottom: 30px;
+}
+
 /* RESPONSIVE */
 @media (max-width: 600px) {
 	/* Estilos para pantallas con un ancho máximo de 600px */
@@ -471,7 +482,7 @@ form select {
 	}
 
 	.imagen{
-		width: 290px;
+		width: 250px;
 		height: auto;
 	}
 
@@ -524,6 +535,15 @@ form select {
 
 	form{
 		width: 100%;
+	}
+
+	.content_izq h1{
+		margin-top: 32px; 
+		/* no se is es necesario cambiarlo */
+	}
+
+	.descripcion{
+		margin-bottom: 30px;
 	}
 
 }
