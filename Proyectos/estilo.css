@@ -16,6 +16,7 @@
 }
 
 body{
+	/*  */
 	/* display: flex;
     flex-direction: column;
     align-items: center;
@@ -267,8 +268,7 @@ margin-right: 25px;
 }
 
 .carruselImagenes {
-	margin-top: -40px;
-	/* esto se puede hacer? */
+	margin-top: 0px;
 }
 
 .imagenes {
