@@ -268,8 +268,7 @@ margin-right: 25px;
 }
 
 .carruselImagenes {
-	margin-top: -40px;
-	/* esto se puede hacer? */
+	margin-top: 0px;
 }
 
 .imagenes {
