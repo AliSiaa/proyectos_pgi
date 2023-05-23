@@ -314,6 +314,8 @@ form input {
 	color: rgb(0, 0, 0);
 	border-radius: 10px;
 	border: 2px solid black;
+	height: 30px;
+	padding: 10px;
 }
 
 form select {
@@ -321,6 +323,8 @@ form select {
 	color: rgb(0, 0, 0);
 	border-radius: 10px;
 	border: 2px solid black;
+	height: 30px;
+	padding: 10px;
 }
 
 .btn {
