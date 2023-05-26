@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+header {
+    display: flex;
+    /*  justify-content: space-between; */
+    width: 90%;
+    margin: 10px auto;
+    /* para que este seoarado de arriba, abajo y de los lados */
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+}
+
+.boton img {
+    width: 30px;
+    height: 30px;
+}
+
+.izq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.izq ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.izq h1 {
+    margin-right: 30px;
+}
+
+.cuadroBusqueda {
+    display: flex;
+    width: 550px;
+    /*   width: 50%; */
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+
+
+}
+
+#cuadroFotos {
+    background-color: rgb(246, 246, 246);
+    width: 150px;
+    height: 40px;
+    /* margin-left: 10px; */
+    border-right: 2px solid rgb(222, 222, 222);
+    padding-left: 10px;
+    padding-right: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.espacio {
+    padding-left: 10px;
+}
+
+/* PAra poner la lupa dentro */
+.contenedor {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 550px;
+
+}
+
+.cuadroLupa {
+    /*  height: 20%; */
+    height: 40px;
+    margin-top: 10px;
+    width: 550px;
+    background-color: rgb(246, 246, 246);
+    border-radius: 5px;
+    padding-left: 20px;
+    flex-grow: 1;
+    margin: 0px;
+}
+
+.cuadroLupa:focus {
+    outline: none;
+}
+
+
+.contenedorLupa {
+    position: absolute;
+    right: 15px;
+
+    /*  display: flex;
+    align-items: center; */
+
+
+}
+
+.agrupar {
+    display: flex;
+    gap: 10px;
+    background-color: white;
+    /*  margin-left: 10px; */
+    margin-top: 20px;
+}
+
+.boton {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid gainsboro;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.boton img {
+    border-radius: 100%;
+}
+
+.cuadro {
+    position: absolute;
+    top: 50px;
+    /*  border-color: grey; */
+    /* margin: 9px; */
+    /* padding: 10px; */
+    width: 550px;
+    display: none;
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+}
+
+.condenedorMenuCuadro {
+    width: 550px;
+    margin-top: 0px;
+    border: 1px solid gainsboro;
+    border-top: none;
+    padding: 20px;
+    padding-bottom: 10px;
+
+}
+
+button {
+    color: white;
+    background-color: green;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 700;
+    padding-left: 10px;
+    margin-left: 18px;
+
+}
+
+.mostrar {
+    display: inline-flex;
+}
+
+section {
+    width: 90%;
+    margin: 10px auto;
+}
+
+section h1 {
+    margin-top: 100px;
+    font-size: 36px;
+    text-align: center;
+}
+
+section h2 {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+.bntGalery {
+    background-color: white;
+    padding: 15px 30px;
+    color: black;
+    border: 1px solid black;
+}
+
+.bntGalery:first-of-type {
+    margin-left: 0px;
+}
+
+#galeria {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+#galeria div img {
+    width: 100%;
+    height: auto;
+}
