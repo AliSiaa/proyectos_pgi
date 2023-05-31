@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,20 +8,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pexels</title>
 </head>
-
 <body>
-
     <header>
-        <div class="izq">
+
+        <div class="elementos">
             <img class="logo" src="img/pexels_logo.png" alt="imagen">
             <h1>Pexels</h1>
         </div>
 
         <div class="cuadroBusqueda">
+
             <div class="contenedor">
-                <div id="cuadroFotos">
+                <div class="despleMenu" id="cuadroFotos">
                     <i class="fas fa-image"></i> 
-                    <span class="espacio">Photos</span> 
+                    <span class="espacio">Fotos</span><!-- Usamos span porque es una etiqueta que ponemos en línea -->
+                    <i id="desplegarMiniMenu" class="fas fa-caret-right rotar-45"></i><!-- el id lo hemos puesto para el javascript de desplegar el mini menu -->
+                </div>
+                <div class="miniCuadro">
+                    <div>
+                        <i class="fas fa-image"></i>
+                        <span class="espacio">Fotos</span> 
+                    </div>
+                    <div>
+                        <i class="fas fa-video"></i>
+                        <span class="espacio">Vídeos</span> 
+                    </div>
                 </div>
 
                 <input class="cuadroLupa" type="text" placeholder="Busca fotos gratuitas" name="search">
@@ -34,21 +44,21 @@
 
             <div class="cuadro">
                 <div class="condenedorMenuCuadro">
-                    <h2>Descubre lo mejor de Pexels</h2>
+                    <h2>Temas que son tendencia</h2>
                     <div class="agrupar">
                         <div class="boton">
                             <img src="img/imagen_animal.jpg" alt="#">
-                            <p>perro</p>
+                            <p>tecnología</p>
                         </div>
 
                         <div class="boton">
                             <img src="img/imagen_animal.jpg" alt="#">
-                            <p>perro</p>
+                            <p>espacio</p>
                         </div>
 
                         <div class="boton">
                             <img src="img/imagen_animal.jpg" alt="#">
-                            <p>perro</p>
+                            <p>playa</p>
                         </div>
                     </div>
                 </div>
@@ -56,7 +66,7 @@
 
         </div>
 
-        <div class="izq">
+        <div class="elementos">
             <ul>
                 <li>Explorar</li>
                 <li>Licencia</li>
@@ -68,32 +78,72 @@
 
     </header>
 
-
     <section>
-        <h1>Discover the Best of Pexels</h1>
+        <h1>Descubre lo mejor de Pexels</h1>
     </section>
 
     <section>
-        <h2>Popular Collections</h2>
+        <h2>Colecciones Populares</h2>
 
-        <button class="bntGalery">Únete</button>
-        <button class="bntGalery">Únete</button>
-        <button class="bntGalery">Únete</button>
+        <button id="btnTodas" class="bntGalery">Todas</button><!-- btnTodas lo pusimos en el javascript -->
+        <button id="btnEquinocio" class="bntGalery">Equinocio De Primavera</button>
+        <button id="btnFlores" class="bntGalery">Flores</button>
+        <button id="btnPrimavera" class="bntGalery">Primavera</button>
 
         <div id="galeria">
-            <div>
-                <img src="./img/pexels-photo-6487218.webp" alt="" srcset="">
+
+            <div class="flex">
+
+                <div class="container" data-category="Equinocio">
+                    <img src="./img/pexels-photo-6487218.webp" alt="" srcset="">
+                    <div class="ocultar overlay"></div>
+                    <i class="fas ocultar icoImg-heart fa-heart"></i>
+                    <i class="fas ocultar icoImg-bookmark fa-bookmark"></i>
+                    <i class="fas ocultar icoImg-save fa-cloud-download-alt"></i>
+                    
+                </div>
+
+                <div class="container" data-category="Flores">
+                    <img src="./img/pexels-photo-6954509.jpeg" alt="" srcset="">
+                    <div class="ocultar overlay"></div>
+                    <i class="fas ocultar icoImg-heart fa-heart"></i>
+                    <i class="fas ocultar icoImg-bookmark fa-bookmark"></i>
+                    <i class="fas ocultar icoImg-save fa-cloud-download-alt"></i>
+                    
+                </div>
+                <div class="container" data-category="Primavera">
+                    <img src="./img/branches-cold-early-forest-6943624.jpeg" alt="" srcset="">
+                     <i class="fas ocultar icoImg-heart fa-heart"></i>
+                     <i class="fas ocultar icoImg-bookmark fa-bookmark"></i>
+                     <i class="fas ocultar icoImg-save fa-cloud-download-alt"></i>
+                     <div class="ocultar overlay"></div>
+                </div>
             </div>
-            <div>
-                <img src="./img/pexels-photo-6954509.jpeg" alt="" srcset="">
+            
+            <div class="flex">
+                <div class="container" data-category="Equinocio">
+                    <img src="./img/pexels-photo-6487218.webp" alt="" srcset="">
+                     <i class="fas ocultar icoImg-heart fa-heart"></i>
+                     <i class="fas ocultar icoImg-bookmark fa-bookmark"></i>
+                     <i class="fas ocultar icoImg-save fa-cloud-download-alt"></i>
+                </div>
+                <div class="container" data-category="Flores">
+                    <img src="./img/pexels-photo-6954509.jpeg" alt="" srcset="">
+                     <i class="fas ocultar icoImg-heart fa-heart"></i>
+                     <i class="fas ocultar icoImg-bookmark fa-bookmark"></i>
+                     <i class="fas ocultar icoImg-save fa-cloud-download-alt"></i>
+                </div>
+                <div class="container" data-category="Primavera">
+                    <img src="./img/branches-cold-early-forest-6943624.jpeg" alt="" srcset="">
+                     <i class="fas ocultar icoImg-heart fa-heart"></i>
+                     <i class="fas ocultar icoImg-bookmark fa-bookmark"></i>
+                     <i class="fas ocultar icoImg-save fa-cloud-download-alt"></i>
+                </div>
             </div>
-            <div>
-                <img src="./img/branches-cold-early-forest-6943624.jpeg" alt="" srcset="">
-            </div>
+
         </div>
+
     </section>
-
-
 
     <script src="busqueda.js"></script>
 </body>

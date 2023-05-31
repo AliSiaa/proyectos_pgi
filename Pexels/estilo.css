@@ -1,74 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Roboto:wght@300&display=swap');
 * {
     margin: 0;
     border: 0;
     box-sizing: border-box;
     /* border: 1px solid black; */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
 }
 
 header {
     display: flex;
-    /*  justify-content: space-between; */
-    width: 90%;
+    width: 80%;
     margin: 10px auto;
+    justify-content: space-between;
     /* para que este seoarado de arriba, abajo y de los lados */
 }
 
-.logo {
-    width: 30px;
-    height: 30px;
-}
-
-.boton img {
-    width: 30px;
-    height: 30px;
-}
-
-.izq {
+.elementos{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
 
-.izq ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    list-style: none;
-    gap: 20px;
+.logo {
+    width: 50px;
+    height: 50px;
 }
 
-.izq h1 {
-    margin-right: 30px;
+.elementos h1 {
+    /* margin-right: 50px; */
+    font-size: 1.3em;
 }
 
 .cuadroBusqueda {
     display: flex;
-    width: 550px;
-    /*   width: 50%; */
+    width: 65%;
     justify-content: center;
     align-items: center;
-    height: 40px;
-
-
-}
-
-#cuadroFotos {
-    background-color: rgb(246, 246, 246);
-    width: 150px;
-    height: 40px;
-    /* margin-left: 10px; */
-    border-right: 2px solid rgb(222, 222, 222);
-    padding-left: 10px;
-    padding-right: 10px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.espacio {
-    padding-left: 10px;
 }
 
 /* PAra poner la lupa dentro */
@@ -77,42 +46,87 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 550px;
+    width: 100%;
+}
 
+#cuadroFotos {
+    background-color: rgb(246, 246, 246);
+    width: 120px;
+    height: 50px;
+    border-right: 2px solid rgb(222, 222, 222);
+    padding-left: 10px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.espacio {
+    padding-left: 10px;
+    font-size: 1.1em;
+}
+
+.rotar-45{
+    transform: rotate(90deg);
+    margin-left: 10px;
+}
+
+.miniCuadro{
+    position: absolute;
+    top: 40px;
+    /* width: 120px; */
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+    border: 1px solid black;
+    z-index: 999;
+    display: none;
 }
 
 .cuadroLupa {
-    /*  height: 20%; */
-    height: 40px;
+    height: 50px;
     margin-top: 10px;
-    width: 550px;
+    /* width: 550px; */
     background-color: rgb(246, 246, 246);
     border-radius: 5px;
     padding-left: 20px;
     flex-grow: 1;
     margin: 0px;
+    font-size: 1em;
 }
 
 .cuadroLupa:focus {
     outline: none;
 }
 
-
 .contenedorLupa {
     position: absolute;
     right: 15px;
+}
 
-    /*  display: flex;
-    align-items: center; */
+.cuadro {
+    position: absolute;
+    top: 50px;
+    width: 550px;
+    display: none;
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+}
 
-
+.condenedorMenuCuadro {
+    width: 550px;
+    margin-top: 0px;
+    border: 1px solid gainsboro;
+    border-top: none;
+    padding: 20px;
+    padding-bottom: 10px;
 }
 
 .agrupar {
     display: flex;
     gap: 10px;
     background-color: white;
-    /*  margin-left: 10px; */
     margin-top: 20px;
 }
 
@@ -127,54 +141,39 @@ header {
 
 .boton img {
     border-radius: 100%;
+    width: 30px;
+    height: 30px;
 }
 
-.cuadro {
-    position: absolute;
-    top: 50px;
-    /*  border-color: grey; */
-    /* margin: 9px; */
-    /* padding: 10px; */
-    width: 550px;
-    display: none;
-    background-color: rgb(255, 255, 255);
-    margin: 0px;
-}
-
-.condenedorMenuCuadro {
-    width: 550px;
-    margin-top: 0px;
-    border: 1px solid gainsboro;
-    border-top: none;
-    padding: 20px;
-    padding-bottom: 10px;
-
+.elementos ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    font-size: 1.1em;
+    padding-left: 0;
 }
 
 button {
-    color: white;
-    background-color: green;
-    padding: 10px;
+    color: #fff;
+    border-color: #05a081;
+    background: #05a081;
+    padding: 15px;
     border-radius: 5px;
-    font-weight: 700;
-    padding-left: 10px;
-    margin-left: 18px;
-
-}
-
-.mostrar {
-    display: inline-flex;
+    margin-left: 16px;
+    font-size: 1.1em;
 }
 
 section {
-    width: 90%;
+    width: 80%;
     margin: 10px auto;
 }
 
 section h1 {
     margin-top: 100px;
     font-size: 36px;
-    text-align: center;
+      text-align: center;
 }
 
 section h2 {
@@ -188,19 +187,86 @@ section h2 {
     padding: 15px 30px;
     color: black;
     border: 1px solid black;
+    margin-left: 5px;  
 }
 
 .bntGalery:first-of-type {
-    margin-left: 0px;
+    margin-left: 0px;/* para aplicarlo solo al primer elemento por eso usamos first-of-type*/
 }
 
 #galeria {
     margin-top: 20px;
-    display: flex;
     gap: 20px;
+}
+
+.flex{
+    display: flex;
+    gap: 10px;
+    margin: 5px;
+    justify-content: space-between;
+}
+
+.container{
+    position: relative;
 }
 
 #galeria div img {
     width: 100%;
-    height: auto;
+    height: 100%;
+}
+
+.icoImg-heart{
+    font-size: 18px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    z-index: 2;
+}
+
+.icoImg-bookmark{
+    font-size: 18px;
+    position: absolute;
+    top: 10px;
+    right: 35px;
+    color: white;
+    z-index: 2;
+}
+
+.icoImg-save{
+    font-size: 18px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: white;
+    z-index: 2;
+}
+
+/* CLASES QUE HEMOS PUESTO PARA EL JAVASCRIPT */
+.mostrar {
+    display: inline-flex;
+}
+
+.ocultar{
+    display: none;    
+}
+
+.mostrarInBlock {
+    display: block;
+}
+
+.rotate-270{
+    transform: rotate(270deg);
+}
+
+.overlay{
+    position: absolute;
+    top:0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+  
+    z-index: 1;
+    /* background-size: cover; */
 }
