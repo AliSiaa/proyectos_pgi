@@ -13,11 +13,25 @@ html{
 	scroll-behavior: smooth;
 }
 
+.flecha{
+	font-size: 30px;
+    color: #ffffff;
+    border-radius: 100%;
+    background-color: #5AB7E5;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .portada{
     display: flex;
     flex-direction: column;
     gap: 30px;
-	/* min-height: 100vh; */
+	min-height: 80vh;
 }
 
 body{
@@ -39,7 +53,7 @@ body{
 
 .fondo {
 	position: absolute;
-	width: 100vw;
+	width: 100%;/* lo cambio para que se ajuste bien a la pantalla */
 	left: 0;
 	z-index: -1;
 }
@@ -140,7 +154,7 @@ header {
 }
 
 .imagen {
-	width: 70%;
+	width: 80%;
     height: 400px;
 	/* margin-bottom: 20px; */
 	clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
@@ -456,7 +470,7 @@ form select {
 	}
 	
 	.imagen {
-		width: 60%;
+		width: 80%;
 	}
 		
 }
