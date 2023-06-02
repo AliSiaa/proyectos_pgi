@@ -9,6 +9,10 @@
 	/* border: 1px solid black; */
 }
 
+html{
+	scroll-behavior: smooth;
+}
+
 .portada{
     display: flex;
     flex-direction: column;

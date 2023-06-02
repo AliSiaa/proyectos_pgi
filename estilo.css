@@ -6,13 +6,18 @@
 	box-sizing: border-box;
 	font-family: 'Baloo 2', cursive;
 	color: black;
+	/* border: 1px solid black; */
+}
+
+html{
+	scroll-behavior: smooth;
 }
 
 .portada{
     display: flex;
     flex-direction: column;
     gap: 30px;
-	max-height: 100vh;
+	/* min-height: 100vh; */
 }
 
 body{
@@ -23,6 +28,13 @@ body{
     justify-content: center; */
     width: 70vw;
     margin: auto;
+}
+
+#menuMovil ul li a{
+	text-decoration: none;
+}
+#menuPC ul li a{
+	text-decoration: none;
 }
 
 .fondo {
@@ -69,7 +81,7 @@ header {
 
 .content {
 	margin: 0 auto;
-	height: 100vh;
+	/* min-height: 100vh; */
 	display: flex;
 	gap: 20px;
 	justify-content: space-between;
@@ -229,19 +241,22 @@ margin-right: 25px;
 	transition: all 1s ease-in-out;
 }
 
-.progress-bar .desarrollo {
+.progress-bar .leer {
 	background-color: #d0e06c;
 }
+.progress-bar .cine {
+	background-color: #0170e0;
+}
 
-.progress-bar:hover>.desarrollo {
+/* .progress-bar:hover>.desarrollo {
 	width: 85%;
 }
 
 .progress-bar:hover>.diseño {
 	width: 95%;
-}
+} */
 
-.progress-bar .diseño {
+.progress-bar .disenyo {
 	background-color: #e06cc0;
 	/* width:95%; */
 }
@@ -250,9 +265,9 @@ margin-right: 25px;
 	background-color: #6cd9e0;
 }
 
-.progress-bar:hover>.fotografia {
+/* .progress-bar:hover>.fotografia {
 	width: 70%;
-}
+} */
 
 .centrar {
 	text-align: center;
@@ -374,7 +389,7 @@ form select {
 }
 
 .portatil {
-	width: 115%;
+	width: 100%;
 }
 
 .fa-facebook-f:hover {
@@ -422,6 +437,28 @@ form select {
 
 .descripcion{
 	margin-bottom: 30px;
+}
+
+@media (min-width: 600px){
+	body{
+		width: 90vw;
+	}
+	
+	.imagen {
+		width: 89%;
+	}
+		
+}
+
+@media (min-width: 800px){
+	body{
+		width: 70vw;
+	}
+	
+	.imagen {
+		width: 60%;
+	}
+		
 }
 
 /* RESPONSIVE */
@@ -480,6 +517,7 @@ form select {
 	.portada {
 		max-height: none;
 	}
+
 	.content{
 		flex-direction: column;
 		height: 100%
@@ -549,5 +587,15 @@ form select {
 	.descripcion{
 		margin-bottom: 30px;
 	}
+	.fondo{
+		max-width: 100%;
+	}
+
+}
+
+@media (max-height: 700px) {
+	.content{
+		min-height: 90vh;
+	}	
 
 }
