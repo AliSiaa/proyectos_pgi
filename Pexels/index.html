@@ -74,9 +74,23 @@
                 <li>...</li>
             </ul>
             <button>Únete</button>
+
+            <i id="hamburgesa" class="fas fa-bars"></i>
         </div>
 
     </header>
+
+<!-- PANTALLA MOVIL Y TABLET -->
+    <div class="idMovil">
+        <hr>
+        <ul>
+            <li>Explorar</li>
+            <li>Licencia</li>
+            <li>Subir</li>
+            <li>...</li>
+        </ul>
+        <hr>
+    </div>
 
     <section>
         <h1>Descubre lo mejor de Pexels</h1>
@@ -84,12 +98,12 @@
 
     <section>
         <h2>Colecciones Populares</h2>
-
-        <button id="btnTodas" class="bntGalery">Todas</button><!-- btnTodas lo pusimos en el javascript -->
-        <button id="btnEquinocio" class="bntGalery">Equinocio De Primavera</button>
-        <button id="btnFlores" class="bntGalery">Flores</button>
-        <button id="btnPrimavera" class="bntGalery">Primavera</button>
-
+        <ul class="cambioBoton">
+            <li id="btnTodas" class="bntGalery">Todas</li><!-- btnTodas lo pusimos en el javascript -->
+            <li id="btnEquinocio" class="bntGalery">Equinocio De Primavera</li>
+            <li id="btnFlores" class="bntGalery">Flores</li>
+            <li id="btnPrimavera" class="bntGalery">Primavera</li>
+        </ul>
         <div id="galeria">
 
             <div class="flex">
@@ -113,28 +127,29 @@
                 </div>
                 <div class="container" data-category="Primavera">
                     <img src="./img/branches-cold-early-forest-6943624.jpeg" alt="" srcset="">
+                    <div class="ocultar overlay"></div>
                      <i class="fas ocultar icoImg-heart fa-heart"></i>
                      <i class="fas ocultar icoImg-bookmark fa-bookmark"></i>
                      <i class="fas ocultar icoImg-save fa-cloud-download-alt"></i>
-                     <div class="ocultar overlay"></div>
                 </div>
-            </div>
-            
-            <div class="flex">
+
                 <div class="container" data-category="Equinocio">
                     <img src="./img/pexels-photo-6487218.webp" alt="" srcset="">
+                    <div class="ocultar overlay"></div>
                      <i class="fas ocultar icoImg-heart fa-heart"></i>
                      <i class="fas ocultar icoImg-bookmark fa-bookmark"></i>
                      <i class="fas ocultar icoImg-save fa-cloud-download-alt"></i>
                 </div>
                 <div class="container" data-category="Flores">
                     <img src="./img/pexels-photo-6954509.jpeg" alt="" srcset="">
+                    <div class="ocultar overlay"></div>
                      <i class="fas ocultar icoImg-heart fa-heart"></i>
                      <i class="fas ocultar icoImg-bookmark fa-bookmark"></i>
                      <i class="fas ocultar icoImg-save fa-cloud-download-alt"></i>
                 </div>
                 <div class="container" data-category="Primavera">
                     <img src="./img/branches-cold-early-forest-6943624.jpeg" alt="" srcset="">
+                    <div class="ocultar overlay"></div>
                      <i class="fas ocultar icoImg-heart fa-heart"></i>
                      <i class="fas ocultar icoImg-bookmark fa-bookmark"></i>
                      <i class="fas ocultar icoImg-save fa-cloud-download-alt"></i>

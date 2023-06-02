@@ -32,16 +32,16 @@
     <!-- MENÚ MÓVIL -->
     <div id="menuMovil">
         <ul>
-            <li>Inicio</li>
-            <li>Sobre mí</li>
-            <li>Proyectos</li>
-            <li>Contacto</li>
+            <li><a href="#seccion1">Inicio</a></li>
+            <li><a href="#seccion2">Sobre mi</a></li>
+            <li><a href="#seccion3">Proyectos</a></li>
+            <li><a href="#seccion4">Contacto</a></li>
         </ul>
     </div>
 
 
     <!-- PORTADA -->
-    <section class="portada">
+    <section id="seccion1" class="portada">
         <img class="fondo" src="img/fondo.svg" alt="fondo">
         <header>
 
@@ -51,10 +51,10 @@
 
             <div id="menuPC" class="derc">
                 <ul>
-                    <li>Inicio</li>
-                    <li>Sobre mí</li>
-                    <li>Proyectos</li>
-                    <li>Contacto</li>
+                    <li><a href="#seccion1">Inicio</a></li>
+                    <li><a href="#seccion2">Sobre mi</a></li>
+                    <li><a href="#seccion3">Proyectos</a></li>
+                    <li><a href="#seccion4">Contacto</a></li>
                 </ul>
             </div>
 
@@ -85,7 +85,7 @@
     </section>
 
     <!-- SOBRE MÍ -->
-    <div class="sobreMi">
+    <div id="seccion2" class="sobreMi">
         <div class="margen-r-30">
             <p class="numero">01.</p>
         </div>
@@ -115,52 +115,52 @@
 
             <article class="abajo_1">
                 <div class="separacion">
-                    <h2>Desarrollo</h2>
+                    <h2>Diseño</h2>
                     <h2>85%</h2>
                 </div>
                 <div class="iconoBarra">
                     <i class="fas fa-camera"></i>
                     <div class="progress-bar">
-                        <span class="bar desarrollo"></span>
+                        <span class="bar disenyo"></span>
                     </div>
                 </div>
             </article>
 
             <article class="abajo_1">
                 <div class="separacion">
-                    <h2>Desarrollo</h2>
-                    <h2>85%</h2>
+                    <h2>Fotografía</h2>
+                    <h2>10%</h2>
                 </div>
                 <div class="iconoBarra">
                     <i class="fas fa-fire"></i>
                     <div class="progress-bar">
-                        <span class="bar desarrollo"></span>
+                        <span class="bar fotografia"></span>
                     </div>
                 </div>
             </article>
 
             <article class="abajo_1">
                 <div class="separacion">
-                    <h2>Desarrollo</h2>
-                    <h2>85%</h2>
+                    <h2>Cine</h2>
+                    <h2>30%</h2>
                 </div>
                 <div class="iconoBarra">
                     <i class="fas fa-fire"></i>
                     <div class="progress-bar">
-                        <span class="bar desarrollo"></span>
+                        <span class="bar cine"></span>
                     </div>
                 </div>
             </article>
 
             <article class="abajo_1">
                 <div class="separacion">
-                    <h2>Desarrollo</h2>
-                    <h2>85%</h2>
+                    <h2>Leer</h2>
+                    <h2>70%</h2>
                 </div>
                 <div class="iconoBarra">
                     <i class="fas fa-fire"></i>
                     <div class="progress-bar">
-                        <span class="bar desarrollo"></span>
+                        <span class="bar leer"></span>
                     </div>
                 </div>
             </article>
@@ -170,7 +170,7 @@
     </section>
 
     <!-- PROYECTOS -->
-    <div class="centrar">
+    <div id="seccion3" class="centrar">
         <h1>Proyectos</h1>
         <h3>"La mejor manera de predecir el futuro es crearlo"</h3>
     </div>
@@ -220,7 +220,7 @@
     <h1 class="contacto">Contacto</h1>
 
 
-    <div class="flex">
+    <div id="seccion4" class="flex">
         <div class="w-100">
             <form action="#">
 
@@ -276,6 +276,7 @@
     </div>
 
     <script src="js/hamburger.js"></script>
+    <script src="js/barras.js"></script>
 </body>
 
 </html>

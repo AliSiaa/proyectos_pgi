@@ -89,10 +89,20 @@ const despleMenu = document.querySelector(".despleMenu");
 // Coger lo que va a sufrir modificaciones en el html
 const miniCuadro = document.querySelector('.miniCuadro');
 
+
 // ¿Qué quiero escuchar? el click
 despleMenu.addEventListener('click', () =>{
     /* ¿QUé voy ha hacer cual el click */
    /*  miniCuadro.style.display = "block"; */
    miniCuadro.classList.toggle("mostrarInBlock");
    desplegarMiniMenu.classList.toggle("rotate-270");
-})
+});
+
+
+/* MENU HAMBURGUESA */
+const hamburgesa = document.querySelector('#hamburgesa');
+const idMovil = document.querySelector(".idMovil");
+hamburgesa.addEventListener('click', () => {
+    idMovil.classList.toggle('mostrarInBlock');
+    //body.style.background.
+});
