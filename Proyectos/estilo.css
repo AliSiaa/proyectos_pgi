@@ -39,7 +39,7 @@ body{
 
 .fondo {
 	position: absolute;
-	width: 100vw;
+	width: 100%;/* lo cambio para que se ajuste bien a la pantalla */
 	left: 0;
 	z-index: -1;
 }
