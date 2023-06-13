@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Preparacion Examen</title>
+</head>
+<body>
+    <section class="galeria">
+
+        <div class="todosArticulos">
+            <article class="tarjetas" data-tarjeta="NIKE AIR 97" data-p="$ 1.300">
+                <img class="zapatos" src="img/1.png" alt="#">
+                <div class="abajo">
+                    <h2>NIKE AIR 97</h2>
+                    <p>$ 1.300</p>
+                </div>
+            </article>
+    
+            <article class="tarjetas" data-tarjeta="NIKE RUNNING TERRA" data-p="$ 1.800">
+                <img class="zapatos" src="img/2.png" alt="#">
+                <div class="abajo">
+                    <h2>NIKE RUNNING TERRA</h2>
+                    <p>$ 1.800</p>
+                </div>
+            </article>
+    
+            <article class="tarjetas" data-tarjeta="NIKE WINFLO 8" data-p="$ 3.600">
+                <img class="zapatos" src="img/3.png" alt="#">
+                <div class="abajo">
+                    <h2>NIKE WINFLO 8</h2>
+                    <p>$ 3.600</p>
+                </div>
+            </article>
+    
+            <article class="tarjetas" data-tarjeta="NIKE LOW-TOP" data-p="$ 1.800">
+                <img class="zapatos" src="img/4.png" alt="#">
+                <div class="abajo">
+                    <h2>NIKE LOW-TOP</h2>
+                    <p>$ 1.800</p>
+                </div>
+            </article>
+    
+            <article class="tarjetas" data-tarjeta="NIKE BLAZER 97" data-p="$ 130">
+                <img class="zapatos" src="img/5.png" alt="#">
+                <div class="abajo">
+                    <h2>NIKE BLAZER 97</h2>
+                    <p>$ 130</p>
+                </div>
+            </article>
+    
+            <article class="tarjetas" data-tarjeta="NIKE LEGEND ESENTIAL" data-p="$ 2.000">
+                <img class="zapatos" src="img/6.png" alt="#">
+                <div class="abajo">
+                    <h2>NIKE LEGEND ESENTIAL</h2>
+                    <p>$ 2.000</p>
+                </div>
+            </article>
+    
+            <article class="tarjetas" data-tarjeta="NIKE AIR ZOOM" data-p="$ 2.500">
+                <img class="zapatos" src="img/7.png" alt="">
+                <div class="abajo">
+                    <h2>NIKE AIR ZOOM</h2>
+                    <p>$ 2.500</p>
+                </div>
+            </article>
+    
+            <article class="tarjetas" data-tarjeta="NIKE TERRA KING" data-p="$ 1.800">
+                <img class="zapatos" src="img/8.png" alt="">
+                <div class="abajo">
+                    <h2>NIKE TERRA KING</h2>
+                    <p>$ 1.800</p>
+                </div>
+            </article>
+        </div>
+        
+        <!-- VENTANA EXPANDIBLE -->
+        <div class="seleccionado">
+            <article class="seleccionadoTarjetas">
+                <span onclick="toggleMenu()">X</span>
+                <img class="zapatos" src="img/1.png" alt="#">
+                <div class="abajoSelecionado">
+                    <div class="descripcion">
+                        <h1>NIKE RUNNING TERRA</h1>
+                        <h2>Descripción del modelo</h2>
+                        <p id="precio">$ 1.800</p>
+                        <p>SIZE</p>
+                    </div>
+                   
+                    <div class="opciones">
+                        <select name="#" id="#">
+                            <option>36</option>
+                            <option>37</option>
+                            <option>38</option>
+                            <option>39</option>
+                            <option>40</option>
+                        </select>
+                        <button>Agregar al carrito</button>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <script src="desplegable.js"></script>
+</body>
+</html>
