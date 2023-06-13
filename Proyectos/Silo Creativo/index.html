@@ -11,8 +11,8 @@
 </head>
 
 <body>
-    
-    
+
+
     <header>
         <div id="iconoMenuMovil">
             <i class="fas fa-bars"></i>
@@ -23,7 +23,9 @@
         </div>
 
         <div id="menuMovil">
-            
+
+            <span class="close" onclick="closeModal()">X</span>
+
             <ul>
                 <li><a href="#" class="otraClase">Temas WordPress</a></li>
                 <li><a href="#" class="gris">Soporte</a></li>
@@ -35,36 +37,29 @@
                         <li class="remarcar active"><a href="#" class="ing"> ENG </a></li>
                     </ul>
                 </div>
-                <i id="cerrar" class="fa-solid fa-circle-xmark"></i>
+
+
+                <!-- <i id="cerrar" class="fa-solid fa-circle-xmark"></i> -->
+
+                <!-- MODO OSCURO -->
+                <input type="checkbox" class="click" id="check">
+
+                <label class="switch" for="check">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                    <div class="ball"></div>
+                </label>
+
             </ul>
         </div>
 
 
         <nav class="menu">
-            <!-- MODO OSCURO -->
-            <input type="checkbox" class="click" id="check">
 
-            <label class="switch" for="check">
-                <i class="fas fa-sun"></i>
-                <i class="fas fa-moon"></i>
-                <div class="ball"></div>
-            </label> 
-            <ul>
-                <li><a href="#" class="otraClase">Temas WordPress</a></li>
-                <li><a href="#" class="gris">Soporte</a></li>
-                <li><a href="#" id="blog" class="gris">Blog</a></li>
-
-                <div class="lenguaje">
-                    <ul id="f-row">
-                        <li class="remarcar "><a href="#" class="esp"> ESP </a></li>
-                        <li class="remarcar active"><a href="#" class="ing"> ENG </a></li>
-                    </ul>
-                </div>
-            </ul>
             <!-- LUPA ORDENADOR -->
             <i class="fa-solid fa-magnifying-glass fa-1x busca" onclick="window.lupa.showModal();"></i>
         </nav>
-        
+
     </header>
 
     <!-- PORTADA -->
@@ -193,13 +188,15 @@
         <div class="copy">
             <p>© 2023 Diseñado con cariño por SiloCreativo ;)</p>
         </div>
-    </div>
+        </div>
     </footer>
 
 
     <!-- VENTANA MODAL -->
     <dialog id="lupa" class="cuadroBusqueda">
-        
+
+
+
         <div class="buscaClase">
             <input type="text" placeholder="Buscar..." name="search">
             <span class="close" onclick="window.lupa.close();"> X </span>
@@ -215,14 +212,14 @@
                 <h2>Filtrar por Etiquetas</h2>
                 <div class="mt-20">
                     <button class="specialHover">Colores CSS</button>
-                    <button class="specialHover">Descargables</button> 
+                    <button class="specialHover">Descargables</button>
                     <button class="specialHover">Ecommerce</button>
                 </div>
-                 <div class="mt-10">
-                    <button class="specialHover">Formación</button> 
-                    <button class="specialHover">Ghost</button> 
-                    <button class="specialHover">Html</button> 
-                 </div>
+                <div class="mt-10">
+                    <button class="specialHover">Formación</button>
+                    <button class="specialHover">Ghost</button>
+                    <button class="specialHover">Html</button>
+                </div>
             </div>
         </div>
     </dialog>

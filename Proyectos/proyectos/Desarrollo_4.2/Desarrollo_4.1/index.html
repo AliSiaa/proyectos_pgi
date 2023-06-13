@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Desarrollo_4</title>
+	<script src="https://kit.fontawesome.com/ac69d7905c.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+	<div class="overlay"></div>
+	<div class="contenedor">
+
+		<header>
+			
+			<div class="derc">
+				<i class="fas fa-bars burguer"></i>
+				<img src="img/logo.png" alt="logo">
+				<ul>
+					<li>Cursos</li>
+					<li>Proyectos</li>
+					<li>Empleo</li>
+				</ul>
+			</div>
+
+			<div class="izq">
+				<i class="fas fa-shopping-cart"></i>
+				<h1>Entrar</h1>
+				<a class="boton_style" onclick="window.popup.showModal();" href="#">Crear cuenta
+				</a>
+			</div>
+		</header>
+	
+		<section class="contenido">
+			<h1>Domestika es la comunidad<br>de la clase creativa</h1>
+			<p>Aprende con los mejores profesionales y forma parte <br>de la mayor comunidad para creativos.</p>
+			<div class="boton">
+				<a class="boton_style" href="#">
+						Ver los cursos
+				</a>
+				<a class="boton_style" href="#">
+						Registrarte
+				</a>
+			</div>
+		</section>
+
+<!--MODAL AVANZADO-->
+		<dialog id="popup" class="modal">
+			<div class="content_modal">
+				<a class="close" onclick="window.popup.close();" href="#">X
+				</a>
+
+				<div class="content_modal_2">
+					<img src="img/imagen_modal.jpg" class="imagen_modal">
+				</div>
+				<div class="content_modal_3">
+					<div class="cabecera">
+						<img src="img/logo.png" class="logo">
+						<h2>Seguro que tus dudas se resuelven en nuestro foro. Comparte conocimiento, ideas y trucos en Domestika.</h2>
+						<a href="#" class="button-facebook">
+							<i class="fab fa-facebook"></i>
+							<span>Regístrate con Facebook</span>
+						</a>  
+					</div>
+
+					<div class="body">
+						
+						<p>o regístrate con tu email</p>
+
+					    <input type="tel" id="phone" name="phone" placeholder="Email">
+					    <input type="tel" id="phone" name="phone" placeholder="Contraseña">
+
+					    <p>¿Cuál es tu fecha de nacimiento?</p>
+					    <div class="fecha">
+						    
+						    <select name="día" placeholder="día">
+						    	<option>1</option>
+							    <option>2</option>
+							    <option>3</option>
+							    <option>4</option>
+							    <option>5</option>
+							    <option>6</option>
+							    <option>7</option>
+							    <option>8</option>
+							    <option>9</option>
+							    <option>10</option>
+							    <option>11</option>
+							    <option>12</option>
+							    <option>13</option>
+							    <option>14</option>
+							    <option>14</option>
+							    <option>16</option>
+							    <option>17</option>
+							    <option>18</option>
+							    <option>19</option>
+							    <option>20</option>
+							    <option>21</option>
+							    <option>22</option>
+							    <option>23</option>
+							    <option>24</option>
+							    <option>25</option>
+							    <option>26</option>
+							    <option>27</option>
+							    <option>28</option>
+							    <option>29</option>
+							    <option>30</option>
+							    <option>31</option>
+							</select>
+					    
+					    	<select name="mes" placeholder="mes">
+					    		<option>enero</option>
+							    <option>febrero</option>
+							    <option>marzo</option>
+							    <option>abril</option>
+							    <option>mayo</option>
+							    <option>junio</option>
+							    <option>julio</option>
+							    <option>agosto</option>
+							    <option>septiembre</option>
+							    <option>octubre</option>
+							    <option>noviembre</option>
+							    <option>diciembre</option>
+							</select>
+
+							<select name="año" placeholder="año">
+						    	<option>2002</option>
+							    <option>2003</option>
+							    <option>2004</option>
+							    <option>2005</option>
+							    <option>2006</option>
+							    <option>2007</option>
+							    <option>2008</option>
+							    <option>2009</option>
+							    <option>2010</option>
+							    <option>2011</option>
+							    <option>2012</option>
+							    <option>2013</option>
+							    <option>2014</option>
+							    <option>2015</option>
+							    <option>2016</option>
+							    <option>2017</option>
+							    <option>2018</option>
+							    <option>2019</option>
+							    <option>2020</option>
+							    <option>2021</option>
+							    <option>2022</option>
+							</select>
+
+							<p>Conocer tu fecha de nacimiento nos permite personalizar tu experiencia en Domestika</p>
+					    
+					    </div>
+
+					    <a class="boton_style_2" href="#">
+						Crear cuenta</a>
+
+						<p>Al hacer clic en "Crear cuenta" certifico que tengo 16 años o más y acepto las <u> Condiciones de Uso </u>, la <u> Política de Privacidad </u>, la <u> Política de Cookies</u> y recibir novedades y promociones</p>
+
+					</div>
+
+					<div class="footer">
+							<span>¿Ya tienes cuenta?</span> 
+							<a class="entrar" href="#">Entrar</a>
+					</div>
+				</div>
+		</div>
+
+		</dialog>
+	</div>	
+</body>
+</html>

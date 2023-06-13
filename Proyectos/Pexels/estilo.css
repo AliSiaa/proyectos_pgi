@@ -57,7 +57,8 @@ header {
 
 #cuadroFotos {
     background-color: rgb(246, 246, 246);
-    width: 120px;
+    width: 160px;
+    min-width: 160px;
     height: 50px;
     border-right: 2px solid rgb(222, 222, 222);
     display: flex;
@@ -66,6 +67,7 @@ header {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
+
 
 .espacio {
     padding-left: 10px;
@@ -80,13 +82,16 @@ header {
 .miniCuadro{
     position: absolute;
     top: 40px;
-    /* width: 120px; */
-    padding: 5px;
+    width: 160px;
+    min-width: 160px;
+    padding: 15px;
     background-color: rgb(255, 255, 255);
-    margin: 0px;
+    margin: 1px;
     border: 1px solid black;
-    z-index: 999;
+    z-index: 1;
+    border-radius: 10px;
     display: none;
+    gap: 10px;
 }
 
 .miniCuadro.mostrarInBlock {
@@ -241,7 +246,7 @@ ul.cambioBoton{
     padding: 0;
     display: flex;
     gap: 10px;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .bntGalery {
@@ -265,9 +270,9 @@ ul.cambioBoton{
 
 #galeria {
     margin-top: 20px;
-    gap: 20px;
+    /* gap: 20px; */
     /* width: 90%; */
-    max-width: 1000px;
+    max-width: 100%;
 }
 
 .flex{
@@ -279,9 +284,18 @@ ul.cambioBoton{
 }
 
 .container{
-    position: relative;
+/*  */
+    width: 450px;
+   /*  */ 
+   position: relative;
     border-radius: 8px;
-    width: 250px;
+    /* width: 250px; */
+    flex: 1 1 32.3%;
+}
+.container img {
+    max-height: 100%;
+    object-fit: cover;
+    width: auto;
 }
 
 #galeria div img {
@@ -342,7 +356,12 @@ ul.cambioBoton{
     transform: rotate(270deg);
 }
 
-@media(max-width:900px){
+/* @media(max-width:900px){
+
+    .miniCuadro{
+        width: 120px;
+    }
+
     .elementos ul{
         display: none;
     }
@@ -350,6 +369,11 @@ ul.cambioBoton{
     .elementos h1{
         display: none;
     }
+
+    ul.cambioBoton{
+        font-size: 12px;
+    }
+
 }
 
 @media(min-width:900px) {
@@ -358,6 +382,119 @@ ul.cambioBoton{
     }
     .idMovil.mostrarInBlock {
         display: none;
+    }
+
+} */
+
+@media(max-width:600px){
+    /* .miniCuadro{
+        width: 95px;
+    } */
+
+    .elementos ul{
+        display: none;
+    }
+
+    .elementos h1{
+        display: none;
+    }
+
+    ul.cambioBoton{
+        font-size: 12px;
+    }
+    body{
+        width: 96%;
+    }
+
+    .flex{
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+    .despleMenu span{
+        display: none;
+    }
+    /* #desplegarMiniMenu{
+        display: none
+    } */
+    #cuadroFotos{
+        width: 50px;
+        min-width: 50px;
+    }
+
+    .agrupar{
+        flex-direction: column;
+    }
+    .boton{
+        width: 200px;
+    }
+    .condenedorMenuCuadro{
+        width: 500px;
+        margin-left: 65px;
+    }
+
+    .cuadro{
+        top: 60px;
+    }
+
+}
+
+@media(min-width:601px) and (max-width:900px){
+   /*  .miniCuadro{
+        width: 100px;
+    } */
+    .elementos ul{
+        display: none;
+    }
+
+    .elementos h1{
+        display: none;
+    }
+
+    ul.cambioBoton{
+        font-size: 12px;
+    }
+    /* body{
+        width: 96%;
+    } */
+    .container{
+        /*  */
+            width: 450px;
+           /*  */ 
+    }
+    body{
+        width: 80%;
+    }
+
+    .cuadro{
+        top: 60px;
+    }
+
+    .condenedorMenuCuadro{
+        width: 410px;
+        margin-left: 250px;
+    }
+}
+
+@media(min-width:900px){
+    #hamburgesa{
+        display: none;
+    }
+
+    .idMovil.mostrarInBlock {
+        display: none;
+    }
+/*     .miniCuadro{
+        width: 140px;
+    } */
+
+    .cuadro{
+        top: 60px;
+    }
+
+    .condenedorMenuCuadro{
+        width: 1000px;
+        margin-left: 17px;
     }
 
 }
