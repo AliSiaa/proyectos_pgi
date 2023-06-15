@@ -25,16 +25,6 @@ function cambiarColor(icono){
 }
 
 
-
-/* for (let i = 0; i < botonBorrar.length; i++) {
-
-    botonBorrar[i].addEventListener('click', function(event){
-        lista.removeChild(event.target.parenElemenet)
-    })
-    
-}
- */
-
 function toggleMenu(){
 
     const menu = document.getElementById("bodyPulsable");
