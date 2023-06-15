@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;	
+	font-family: 'Open Sans', sans-serif;
+	box-sizing: border-box;
+}
+
+body{
+	height: 100vh;
+	background-size: cover;
+	background-image: url(img/imagen_fondo.jpg);
+	background-repeat: no-repeat;
+}
+
+.overlay {
+	width: 100%;
+	height: 100%;
+  	background-color: #ffffff;
+	opacity: 0.6;
+  	position: absolute;
+}
+
+.contenedor{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
+header{
+	
+	display: flex;	
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 2em;
+	flex: 1 1 5%;
+}
+
+.burguer{
+	display:none;
+}
+
+
+
+.derc, .izq{
+	display: flex;
+	align-items: center;
+}
+
+img{
+	width: 200px;
+/*	height: 45px;*/
+}
+
+.derc ul{
+	display: flex;
+	font-size: 1em;
+	left: 0;
+	padding-left: 30px;
+	/*asi separo los elemento de la imagen*/
+	list-style: none;
+}
+
+.derc ul li{
+	margin: 1em;
+	display: inline-block;
+}
+
+@media (max-width:900px){
+	.burguer{
+		display:inline-flex; /*	para aque el texto aparezca */
+	}
+
+	.derc ul{
+		display:none;	
+	}
+	
+}
+
+.izq{
+	margin: 1em;
+	gap:16px;
+}
+
+.izq i{
+	padding-right: 0.5em;
+	padding-left: 0.5em;
+}
+
+.izq h1{
+	font-size: 1em;
+}
+
+.boton_style{
+	display: inline-block;
+	background-color:transparent ;
+	color: black;
+	text-decoration: none;
+	border-radius: 5px;
+	font-size:1em;
+	margin: 10px;
+	padding: 7px;
+	border: 1px solid white;
+}
+
+.boton_style:hover{
+	background-color:#FF0000 ;
+	color: white;
+	border: 1px solid #FF0000 ;
+}
+
+.contenido{
+	display: flex;
+	flex-direction: column;
+	padding-left: 2.5em;
+	padding-top: 151px;
+	gap: 20px;
+	flex: 1 1 95%;
+}
+
+.contenido h1{
+	display: flex;
+	justify-content: flex-start;
+	font-size: 3em;
+}
+
+.contenido p{
+	font-size: 1em;
+	width: 40%;
+	color: black;
+}
+
+/*aqui empieza el css del modal avanzado*/
+
+.modal{
+    margin: auto;
+    border: none;
+    border-radius: 5px;
+    width: 70%;
+    height: 80%;
+}
+
+.content_modal{
+	background:white;
+	border-radius:12px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	positon:relative;
+}
+
+.close{
+	display: flex;	
+	text-decoration: none;
+/*	float: left;*/
+	position: absolute;
+	top:  7px;
+	right: 13px;
+}
+
+.content_modal_2{
+	display: flex;
+	height: 100%;
+	flex: 1 1 50%;
+}
+
+.imagen_modal{
+	width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.content_modal_3{
+	display: flex;
+    flex-direction: column;
+    flex: 1 1 50%;
+}
+
+.cabecera{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 30%;
+    gap: 20px;
+    padding: 30px;
+}
+
+.logo{
+    justify-content: center;
+    width: 40%;
+    margin: 10px;
+}
+
+h2{
+    text-align: center;
+    font-size: 1em;
+
+}
+
+.button-facebook{
+    background-color: #0477ea;
+    color: white;
+    padding: 5px 15px;
+    font-size: 20px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.body{
+	flex: 1 1 65%;
+    background-color: #EDF2F2;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px;
+}
+
+dialog::backdrop {
+	background: rgba(234, 206, 227, 0.9);
+}
+
+p{
+	color:#ABB2B9;
+	font-size: 0.7em;
+}
+
+input{
+	padding: 10px;
+}
+
+.fecha{
+	display: flex;
+	gap: 10px;
+	height: 33px;
+	margin: 10px;
+}
+
+.boton_style_2{
+	background-color: #CBC8C8;
+	color: #ABB2B9;
+	width: 150px;
+	text-align: center;
+	padding: 10px;
+	text-decoration: none;
+}
+
+.footer{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex: 1 1 5%;
+	width: 100%;
+	padding: 30px;
+	gap: 15px;
+	border-top: 1px solid #ABB2B9;
+}
+
+.footer span{
+	color:#ABB2B9;
+	font-size: 0.7em;
+}
+
+.entrar{
+	color: #D30300;
+	font-size: 0.7em;
+	text-decoration: none;
+}
+
+@media (max-width:1000px){
+	.content_modal_2{
+		display: none;
+	}
+}
+
+@media (max-width:600px){
+	.body p{
+		display: none;
+	}
+
+	.fecha{
+		display: none;
+	}
+
+	.modal{
+		height: max-content; /*para que el contenido dse adapte a la caja*/
+	}
+}

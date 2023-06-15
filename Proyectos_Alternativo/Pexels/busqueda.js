@@ -1,13 +1,13 @@
 
 const cuadroLupa = document.querySelector(".cuadroLupa");
 
-cuadroLupa.addEventListener("click", function () {
-
+cuadroLupa.addEventListener("click" , function(){
+    
     const barraBusqueda = document.querySelector(".cuadro");
-
+    
     barraBusqueda.classList.toggle("mostrar");
     console.log("hola")
-
+    
 })
 
 /* Obtenemos los botones para escucharlos */
@@ -18,16 +18,16 @@ const btnPrimavera = document.querySelector("#btnPrimavera");
 const galeria = document.querySelector("#galeria");
 
 /* Escucho el click de cada boton */
-btnEquinocio.addEventListener("click", function () {
+btnEquinocio.addEventListener("click", function(){
     filtro("Equinocio");
 })
-btnFlores.addEventListener("click", function () {
+btnFlores.addEventListener("click", function(){
     filtro("Flores");
 })
-btnPrimavera.addEventListener("click", function () {
+btnPrimavera.addEventListener("click", function(){
     filtro("Primavera");
 })
-btnTodas.addEventListener("click", function () {
+btnTodas.addEventListener("click", function(){
     const elementos = document.querySelectorAll('[data-category]');
     elementos.forEach(elemento => {
         elemento.style.display = "block";
@@ -40,14 +40,14 @@ function filtro(nombre) {
     const elementos = document.querySelectorAll('[data-category]');
 
     elementos.forEach(elemento => {
-
-        if (elemento.getAttribute(["data-category"]) !== nombre) {
+         
+        if(elemento.getAttribute(["data-category"]) !== nombre){
             elemento.style.display = "none";
         } else {
             elemento.style.display = "block";
-            elemento.style.width = "400px"
+            elemento.style.width = "400x"
         }
-
+     
     });
 
     galeria.style.display = "flex";
@@ -60,7 +60,7 @@ function filtro(nombre) {
 /* LO DE LOS ICONOS */
 const containers = document.querySelectorAll('.container');
 
-containers.forEach(container => {
+containers.forEach( container => {
 
     container.addEventListener('mouseover', () => {
 
@@ -91,11 +91,11 @@ const miniCuadro = document.querySelector('.miniCuadro');
 
 
 // ¿Qué quiero escuchar? el click
-despleMenu.addEventListener('click', () => {
+despleMenu.addEventListener('click', () =>{
     /* ¿QUé voy ha hacer cual el click */
-    /*  miniCuadro.style.display = "block"; */
-    miniCuadro.classList.toggle("mostrarInBlock");
-    desplegarMiniMenu.classList.toggle("rotate-270");
+   /*  miniCuadro.style.display = "block"; */
+   miniCuadro.classList.toggle("mostrarInBlock");
+   desplegarMiniMenu.classList.toggle("rotate-270");
 });
 
 
