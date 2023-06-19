@@ -4,11 +4,11 @@ console.log("hola")
 
 tarjetas.forEach(tarjeta => {
 
-    tarjeta.addEventListener("click", function(){
+    tarjeta.addEventListener("click", function () {
         // console.log("click", event)
 
         /* RESET ESTILOS TARJETAS */
-        tarjetas.forEach(tarjeta => { 
+        tarjetas.forEach(tarjeta => {
             tarjeta.style.border = "none";
             /* tarjeta.classList.toggle("modicarAnchura"); */
 
@@ -16,13 +16,13 @@ tarjetas.forEach(tarjeta => {
 
 
 
-       /* tarjeta */
-       tarjeta.style.background = "white";
-       tarjeta.style.border = "1px solid red";
-       
-       
-       
-       /* para el div del objeto selecionado */
+        /* tarjeta */
+        tarjeta.style.background = "white";
+        tarjeta.style.border = "1px solid red";
+
+
+
+        /* para el div del objeto selecionado */
         /*  console.log("la imagen es:", event.target.attributes.src.nodeValue); */ /* img/2.png */
 
         const img = tarjeta.querySelector("img");
@@ -44,16 +44,16 @@ tarjetas.forEach(tarjeta => {
         selecionado.style.display = "block";
     })
 
-    
+
 })
 
-function toggleMenu(){
+function toggleMenu() {
     const desplegable = document.querySelector(".seleccionado");
 
-    if(desplegable.style.display=="none"){
+    if (desplegable.style.display == "none") {
         desplegable.style.display = "block";
 
     }
 
-    else{desplegable.style.display = "none"}
+    else { desplegable.style.display = "none" }
 }

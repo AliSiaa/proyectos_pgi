@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     display: flex;
     min-height: 100vh;
     justify-content: center;
@@ -13,27 +13,24 @@ body{
     align-items: center;
 }
 
-.galeria{
-   /*  border: 1px solid; */
+.galeria {
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.todosArticulos{
+.todosArticulos {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    /* justify-content: center; */
-    flex: 1 1 60%; 
+    flex: 1 1 60%;
     /* para que se reparta el espacio entre los hermanos que son flex */
 }
 
-.tarjetas{
+.tarjetas {
     width: 140px;
     height: 300px;
     padding: 0 16px;
-    /* border: 1px solid; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,84 +38,82 @@ body{
     cursor: pointer;
 }
 
-.tarjetas:hover{
+.tarjetas:hover {
     background-color: #E1DEDD;
     border-radius: 5px;
 }
 
-.zapatos{
+.zapatos {
     width: 100%;
 }
 
-.abajo{
+.abajo {
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 5px;
 }
 
-/* DESPLEGABLE */
-.seleccionado{
-    display: none; /* CLICK */
-    /* display: flex; */
+/* VENTANA EXPANDIBLE O DESPLEGLABLE*/
+.seleccionado {
+    display: none;
     gap: 10px;
     width: 38%;
     height: 100vh;
     border: 1px solid;
-    flex: 1 1 40%; 
+    flex: 1 1 40%;
     cursor: pointer;
 }
 
-.seleccionadoTarjetas{
+.seleccionadoTarjetas {
     width: 100%;
     height: 100%;
     padding: 0 16px;
-    /* border: 1px solid; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 30px;
 }
 
-span{
+span {
     font-weight: bold;
     font-size: 26px;
     position: absolute;
     top: 10px;
 }
 
-.abajoSelecionado{
+.abajoSelecionado {
     display: flex;
     gap: 15px;
     flex-direction: column;
 }
 
-.descripcion{
+.descripcion {
     display: flex;
     gap: 15px;
     flex-direction: column;
 }
-@media screen and (max-width: 1500px){
-    .todosArticulos{
-        /* justify-content: center; */
-        flex: 1 1 60%; 
+
+@media screen and (max-width: 1500px) {
+    .todosArticulos {
+        flex: 1 1 60%;
         justify-content: center;
         /* para que se reparta el espacio entre los hermanos que son flex */
     }
-    
-    .tarjetas{
+
+    .tarjetas {
         width: 230px;
         height: 300px;
         cursor: pointer;
     }
 
-    .seleccionado{
+    .seleccionado {
         flex: 1 1 40%;
-        cursor: pointer; 
+        cursor: pointer;
     }
 
-    .modicarAnchura{
+    .modicarAnchura {
         width: 20%;
+        /* Clase de javascript */
     }
-} 
-    
+}
