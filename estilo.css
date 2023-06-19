@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap');
 
-*{
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -8,32 +8,32 @@
 	color: black;
 }
 
-html{
+html {
 	scroll-behavior: smooth;
 }
 
-body{
-    width: 70vw;
-    margin: auto;
+body {
+	width: 70vw;
+	margin: auto;
 }
 
-.flecha{
+.flecha {
 	font-size: 30px;
-    color: #ffffff;
-    border-radius: 100%;
-    background-color: #5AB7E5;
-    width: 50px;
-    height: 50px;
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	color: #ffffff;
+	border-radius: 100%;
+	background-color: #5AB7E5;
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 /* MENU MOVIL */
-#iconoMenuMovil{
+#iconoMenuMovil {
 	display: none;
 }
 
@@ -41,33 +41,31 @@ body{
 	line-height: 1;
 }
 
-#menuMovil{
+#menuMovil {
 	display: none;
 }
 
-#menuMovil ul li a{
+#menuMovil ul li a {
 	text-decoration: none;
 }
 
-#menuPC{
-	display: flex;
-}
-
-.fondo{
+/* PORTADA */
+.fondo {
 	position: absolute;
-	width: 100%;/* lo cambio para que se ajuste bien a la pantalla */
+	width: 100%;
+	/* lo cambio para que se ajuste bien a la pantalla */
 	left: 0;
 	z-index: -1;
 }
 
-.portada{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+.portada {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
 	min-height: 80vh;
 }
 
-header{
+header {
 	display: flex;
 	flex-direction: row;
 	/* elemntos  al lado del otro */
@@ -75,7 +73,8 @@ header{
 	justify-content: space-between;
 }
 
-.derc,.izq {
+.derc,
+.izq {
 	display: flex;
 	align-items: center;
 }
@@ -84,6 +83,13 @@ header{
 	width: 100px;
 	height: 100px;
 }
+
+/* MENU PC */
+#menuPC {
+	display: flex;
+}
+
+/* TERMINA AQUI */
 
 .derc ul {
 	display: flex;
@@ -154,15 +160,16 @@ header{
 
 .imagen {
 	width: 80%;
-    height: 400px;
+	height: 400px;
 	clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
 }
 
+/* SOBRE MI */
 .sobreMi {
 	display: flex;
 }
 
-.margen-r-30{
+.margen-r-30 {
 	margin-right: 25px;
 }
 
@@ -172,7 +179,7 @@ header{
 	text-transform: none;
 	line-height: 1.2em;
 	width: 210px;
-	/* pra separar los nuemros */
+	/* para separar los numeros */
 }
 
 .sobreMi .texto {
@@ -267,9 +274,11 @@ header{
 	background-color: #d0e06c;
 }
 
+/* PROYECTOS */
 .centrar {
 	text-align: center;
 	margin-top: 90px;
+
 }
 
 .centrar h1 {
@@ -290,6 +299,11 @@ header{
 	margin-top: 70px;
 	gap: 20px;
 	text-align: center;
+}
+
+.imagenes a{
+	text-decoration: none; 
+	/* Esto sería opcional porque queda tambien bien con la linea */
 }
 
 .reducir {
@@ -407,61 +421,54 @@ form select {
 	color: #5AB7E5;
 }
 
-.descripcion{
+.descripcion {
 	margin-top: 20px;
-    text-align: center;
+	text-align: center;
 	margin-bottom: 30px;
 }
 
-.logo{
+.logo {
 	width: 100px;
 	height: 100px;
 }
 
-/*  */
+/* TIPOS DE PANTALLAS */
 
-
-
-@media (min-width: 600px){
-	body{
+@media (min-width: 600px) {
+	body {
 		width: 90vw;
 	}
-	
+
 	.imagen {
 		width: 97%;
 	}
-		
+
 }
 
-@media (min-width: 800px){
-	body{
+@media (min-width: 800px) {
+	body {
 		width: 70vw;
 	}
-	
+
 	.imagen {
 		width: 65%;
 	}
-		
+
 }
 
-/* RESPONSIVE */
 @media (max-width: 600px) {
 	/* Estilos para pantallas con un ancho máximo de 600px */
 
-	#menuPC{
-		display: none;
+	body {
+		width: 90vw;
 	}
 
-	#iconoMenuMovil{
-		/* display: block; */
+	#iconoMenuMovil {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		text-align: center;
-		/* height: 100%; */
-		/* z-index: 1; */
 		position: absolute;
-		/* top: 0; */
 		right: 0;
 		width: 50px;
 		height: 50px;
@@ -469,116 +476,118 @@ form select {
 		margin-top: 20px;
 	}
 
-	#menuMovil{
+	#menuMovil {
 		box-shadow: 0px 5px 5px #888888;
 		width: 100%;
 		background-color: white;
 		position: absolute;
-		top: 88px; /* CUADRAR CON ALTO DEL HEADER */
+		top: 88px;
+		/* CUADRAR CON ALTO DEL HEADER */
 		left: 0px;
-		z-index: 999;/* para qu es evea por encima de cualquiere cosa */
+		z-index: 1;
+		/* para qu es evea por encima de cualquiere cosa */
 	}
 
-	#menuMovil ul{
+	#menuMovil ul {
 		list-style: none;
 		padding: 0;
 		margin: 0;
 		text-align: center;
 	}
 
-	#menuMovil li{
-		/* display: flex; */
+	#menuMovil li {
 		padding: 5px;
 		cursor: pointer;
 	}
 
-	#menuMovil li:hover{
-		/* display: flex; */
+	#menuMovil li:hover {
 		text-decoration: underline;
+	}
+
+	.fondo {
+		max-width: 100%;
 	}
 
 	.portada {
 		max-height: none;
 	}
 
-	.content{
+	#menuPC {
+		display: none;
+	}
+
+	.content {
 		flex-direction: column;
 		height: 100%
 	}
 
-	.imagen{
-		width: 250px;
-		height: auto;
-	}
-
-	.content_derc{
+	.content_derc {
 		margin-top: 20px;
 		justify-content: center;
 	}
 
-	body{
-		width: 90vw;
+	.content_izq h1 {
+		margin-top: 32px;
+		/* no se is es necesario cambiarlo */
 	}
 
-	.numero{
+	.imagen {
+		width: 250px;
+		height: auto;
+	}
+
+	.numero {
 		text-align: center;
 		margin-top: 50px;
 		font-size: 80px;
 	}
 
-	.sobreMi, .espacio{
-		flex-direction: column;
-	}
-
-	h1{
+	h1 {
 		font-size: 32px;
 	}
 
-	.sobreMi .texto{
+	.sobreMi .texto {
 		font-size: 16px;
-	} 
+	}
 
-	.barras{
+	.sobreMi,
+	.espacio {
 		flex-direction: column;
 	}
 
-	.abajo_1{
+	.barras {
+		flex-direction: column;
+	}
+
+	.abajo_1 {
 		width: 100%;
 	}
 
-	.imagenes{
+	.imagenes {
 		flex-flow: column wrap;
 	}
 
-	.carruselImagenes .imagenes:nth-child(2){
+	.carruselImagenes .imagenes:nth-child(2) {
 		margin-top: 20px;
 	}
 
-	.flex{
+	.flex {
 		flex-direction: column-reverse;
 	}
 
-	form{
+	form {
 		width: 100%;
 	}
 
-	.content_izq h1{
-		margin-top: 32px; 
-		/* no se is es necesario cambiarlo */
-	}
-
-	.descripcion{
+	.descripcion {
 		margin-bottom: 30px;
-	}
-	.fondo{
-		max-width: 100%;
 	}
 
 }
 
 @media (max-height: 700px) {
-	.content{
+	.content {
 		min-height: 90vh;
-	}	
+	}
 
 }
