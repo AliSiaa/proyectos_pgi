@@ -1,10 +1,10 @@
-*{
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-body{
+body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -12,28 +12,31 @@ body{
 	background-color: black;
 }
 
-.contenedor_fantasma{
+.contenedor_fantasma {
 	display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 	width: 300px;
 }
 
-.elevacion_arriba{
+.elevacion_arriba {
 	animation: mymove 5s infinite;
 }
 
-@keyframes mymove{
-	0%, 100%{
+@keyframes mymove {
+
+	0%,
+	100% {
 		transform: translateY(0px);
 	}
-	50%{
+
+	50% {
 		transform: translateY(-80px);
 	}
 }
 
-.cabeza{
+.cabeza {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -43,13 +46,14 @@ body{
 	background-color: white;
 }
 
-.ojos{
+.ojos {
 	display: flex;
 	gap: 20px;
-	transform: translateY(-20px);	
+	transform: translateY(-20px);
 }
 
-.ojo_der, .ojo_izq{
+.ojo_der,
+.ojo_izq {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -57,92 +61,103 @@ body{
 	background-color: black;
 	height: 30px;
 	width: 30px;
-	position: relative;	
+	position: relative;
 }
 
-.pupila{
-    content: " ";
-    border-radius: 50%;
-    background-color: white;
-    height: 18px;
-    width: 18px;
-    bottom: 1px;
-    right: 0px;
-    position: absolute;
+.pupila {
+	content: " ";
+	border-radius: 50%;
+	background-color: white;
+	height: 18px;
+	width: 18px;
+	bottom: 1px;
+	right: 0px;
+	position: absolute;
 }
 
-.cuerpo{
+.cuerpo {
 	background-color: white;
 	height: 190px;
-    width: 215px;
-    top: -108px;
-    position: relative;
+	width: 215px;
+	top: -108px;
+	position: relative;
 }
 
-.boca{
+.boca {
 	border-radius: 50%;
-    height: 30px;
-    width: 55px;
-    margin-left: 83px;
-    margin-top: 10px;
-    background-color: grey;
-    position: absolute;
-    animation: efect 3s infinite;
+	height: 30px;
+	width: 55px;
+	margin-left: 83px;
+	margin-top: 10px;
+	background-color: grey;
+	position: absolute;
+	animation: efect 3s infinite;
 }
 
-@keyframes efect{
-  0% {transform: scale(1) rotate(-10deg);}
-  50% {transform: scale(1.1) rotate(-10deg);}
-  100% {transform: scale(1) rotate(-10deg);}
+@keyframes efect {
+	0% {
+		transform: scale(1) rotate(-10deg);
+	}
+
+	50% {
+		transform: scale(1.1) rotate(-10deg);
+	}
+
+	100% {
+		transform: scale(1) rotate(-10deg);
+	}
 }
 
-.lengua{
+.lengua {
 	border-radius: 50%;
 	height: 10px;
 	width: 27px;
-    margin-left: 16px;
-    margin-top: 21px;
+	margin-left: 16px;
+	margin-top: 21px;
 	background-color: pink;
-    position: absolute;
+	position: absolute;
 }
 
-.brazo_der{
+.brazo_der {
 	border-radius: 50px;
 	transform: rotate(408deg);
 	height: 40px;
-    width: 112px;
-    right: -30%;
-    bottom: 45%;
-    background-color: white;
-    position: absolute;
+	width: 112px;
+	right: -30%;
+	bottom: 45%;
+	background-color: white;
+	position: absolute;
 }
 
-.brazo_izq{
+.brazo_izq {
 	border-radius: 50px;
 	transform: rotate(219deg);
 	height: 40px;
 	width: 112px;
-    left: -30%;
-    bottom: 70%;
+	left: -30%;
+	bottom: 70%;
 	background-color: white;
-    position: absolute;
+	position: absolute;
 }
 
-.piernas{
+.piernas {
 	display: flex;
 	position: absolute;
-    height: 55px;
-    bottom: -26px;
+	height: 55px;
+	bottom: -26px;
 }
 
-.pierna_1, .pierna_2, .pierna_3, .pierna_4{
+.pierna_1,
+.pierna_2,
+.pierna_3,
+.pierna_4 {
 	border-radius: 50%;
 	background-color: white;
 	height: 53.9px;
 	width: 53.8px;
 }
 
-.sombra{
+.sombra {
 	border-radius: 50%;
 	background-color: grey;
 	height: 34px;
@@ -150,11 +165,14 @@ body{
 	animation: efectsombra 5s infinite;
 }
 
-@keyframes efectsombra{
-	0%, 100%{
+@keyframes efectsombra {
+
+	0%,
+	100% {
 		transform: scale(1.8);
 	}
-	50%{
+
+	50% {
 		transform: scale(0.8);
 	}
 }
