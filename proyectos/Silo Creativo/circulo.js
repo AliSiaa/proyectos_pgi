@@ -5,8 +5,8 @@ const lupa = document.querySelector(".busca");
 const dialog = document.querySelector(".cuadroBusqueda");
 
 
-lupa.addEventListener("click", function() {
-  
+lupa.addEventListener("click", function () {
+
   dialog.classList.toggle("circulo");
 
 });
@@ -14,8 +14,8 @@ lupa.addEventListener("click", function() {
 // Cuando queremos quitar una clase que se añade con el toggle
 const quitarX = document.querySelector(".close");
 
-quitarX.addEventListener("click", function() {
-  
+quitarX.addEventListener("click", function () {
+
   dialog.classList.toggle("circulo");
 
 });

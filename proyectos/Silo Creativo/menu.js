@@ -3,11 +3,11 @@
 const boton = document.getElementById("iconoMenuMovil");
 const menu = document.getElementById("menuMovil");
 
-boton.addEventListener("click", function() {
+boton.addEventListener("click", function () {
 
     console.log("HOLA")
-    
-    if(menu.style.display === "none") {
+
+    if (menu.style.display === "none") {
         menu.style.display = "flex";
     } else {
         menu.style.display = "none";
@@ -19,6 +19,6 @@ boton.addEventListener("click", function() {
 // CERRAR EL MENU MOVIL
 const cerrar = document.getElementById('cerrar');
 
-cerrar.addEventListener("click", function(){
+cerrar.addEventListener("click", function () {
     menu.style.display = "none";
 })
