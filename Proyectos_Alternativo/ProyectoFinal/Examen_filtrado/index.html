@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,10 +14,9 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <title>Filtrado/Borrado</title>
 </head>
-
 <body>
     <div id="contenido">
-
+        
         <header>
             <button id="btnVerTodasImg">Ver todas</button>
         </header>
@@ -45,14 +43,28 @@
                     <i class="fas fa-trash-alt papelera"></i>
                 </div>
             </article>
-
+            
             <article class="tarjeta_imagen">
                 <img class="imagen" src="img/imagen_3.jpg" alt="imagen_1">
                 <div class="overlay">
                     <i class="fas fa-trash-alt papelera"></i>
                 </div>
+            </article> 
+
+            <article class="tarjeta_imagen">
+                <img class="imagen" src="img/imagen_1.jpg" alt="imagen_1">
+                <div class="overlay">
+                    <i class="fas fa-trash-alt papelera"></i>
+                </div>
             </article>
 
+            <article class="tarjeta_imagen">
+                <img class="imagen" src="img/imagen_2.jpg" alt="imagen_1">
+                <div class="overlay">
+                    <i class="fas fa-trash-alt papelera"></i>
+                </div>
+            </article>
+            
             <article class="tarjeta_imagen">
                 <img class="imagen" src="img/imagen_1.jpg" alt="imagen_1">
                 <div class="overlay">
@@ -68,41 +80,15 @@
             </article>
 
             <article class="tarjeta_imagen">
-                <img class="imagen" src="img/imagen_1.jpg" alt="imagen_1">
-                <div class="overlay">
-                    <i class="fas fa-trash-alt papelera"></i>
-                </div>
-            </article>
-
-            <article class="tarjeta_imagen">
-                <img class="imagen" src="img/imagen_2.jpg" alt="imagen_1">
-                <div class="overlay">
-                    <i class="fas fa-trash-alt papelera"></i>
-                </div>
-            </article>
-
-            <article class="tarjeta_imagen">
                 <img class="imagen" src="img/imagen_3.jpg" alt="imagen_1">
                 <div class="overlay">
                     <i class="fas fa-trash-alt papelera"></i>
                 </div>
-            </article>
+            </article> 
 
-        </div>
-
-        <!-- html oculto que luego será el modal -->
-        <div id="modal" style="display: none;">
-            <button id="prev">Anterior</button>
-
-            <img id="modal-img" src="#" alt="#">
-
-            <button id="next">Siguiente</button>
-        </div>
-
+        </div> 
     </div>
 
     <script src="js/java.js"></script>
-    <script src="js/modal.js"></script>
 </body>
-
 </html>
