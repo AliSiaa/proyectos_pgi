@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     display: flex;
     min-height: 100vh;
     justify-content: center;
@@ -13,7 +13,7 @@ body{
     align-items: center;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     border: 1px solid;
@@ -23,45 +23,50 @@ header{
     width: 100%;
 }
 
-.derecha{
+.derecha {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.galeria{
+.fas{
+    cursor: pointer;
+}
+
+.galeria {
     border: 1px solid;
     display: flex;
     max-width: 1000px;
     margin: 0 auto;
 }
 
-.todosArticulos{
+.todosArticulos {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
-    flex: 1 1 50%; 
+    flex: 1 1 50%;
     /* para que se reparta el espacio entre los hermanos que son flex */
 }
 
-.tarjetas{
+.tarjetas {
     width: 227px;
     padding: 10px;
     border: 1px solid;
 }
 
-.persona{
+.persona {
     width: 100%;
 }
 
-.abajo{
+.abajo {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-#cuadroCompleto{
+/* CUANDO PULSAMOS A LA LUPA */
+#cuadroCompleto {
     position: relative;
     padding: 25px 20px;
     display: none;
@@ -69,12 +74,12 @@ header{
     flex: 1 1 50%;
 }
 
-.iconoXBuscar{
+.iconoXBuscar {
     position: absolute;
     right: 10px;
     top: 10px;
 }
 
-.iconoBuscar{
+.iconoBuscar {
     padding: 10px;
 }
