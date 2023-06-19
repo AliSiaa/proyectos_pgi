@@ -16,7 +16,6 @@ body {
 
 header {
     display: flex;
-    /* width: 80%; */
     margin: 10px auto;
     justify-content: space-between;
     /* para que este seoarado de arriba, abajo y de los lados */
@@ -36,7 +35,6 @@ header {
 }
 
 .elementos h1 {
-    /* margin-right: 50px; */
     font-size: 1.3em;
 }
 
@@ -47,7 +45,7 @@ header {
     align-items: center;
 }
 
-/* PAra poner la lupa dentro */
+/* Para poner la lupa dentro */
 .contenedor {
     position: relative;
     display: flex;
@@ -68,7 +66,6 @@ header {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
-
 
 .espacio {
     padding-left: 10px;
@@ -187,14 +184,19 @@ button {
     font-size: 1.1em;
 }
 
+/* PANTALLA MOVIL Y TABLET */
 .idMovil {
     width: 80%;
-    /* height: 16vh; */
     position: fixed;
     background-color: #000000;
     color: white;
     display: none;
     z-index: 5;
+}
+
+hr {
+    border: 1px solid gray;
+    margin: 20px;
 }
 
 .idMovil.mostrarInBlock {
@@ -220,11 +222,6 @@ button {
 
 .idMovil ul li:hover {
     color: #05a081;
-}
-
-hr {
-    border: 1px solid gray;
-    margin: 20px;
 }
 
 section {
@@ -288,16 +285,11 @@ ul.cambioBoton {
     flex: 1 1 32.3%;
 }
 
-.container img {
-    max-height: 100%;
-    object-fit: cover;
-    width: auto;
-}
-
 #galeria div img {
     width: 100%;
     height: 100%;
     border-radius: 8px;
+    object-fit: cover
 }
 
 .ocultar {
@@ -353,36 +345,30 @@ ul.cambioBoton {
 }
 
 @media(max-width:600px) {
-
-    .elementos ul {
-        display: none;
+    body {
+        width: 96%;
     }
 
     .elementos h1 {
         display: none;
     }
 
-    ul.cambioBoton {
-        font-size: 12px;
-    }
-
-    body {
-        width: 96%;
-    }
-
-    .flex {
-        flex-direction: column;
-        gap: 50px;
-        align-items: center;
+    #cuadroFotos {
+        width: 50px;
+        min-width: 50px;
     }
 
     .despleMenu span {
         display: none;
     }
 
-    #cuadroFotos {
-        width: 50px;
-        min-width: 50px;
+    .cuadro {
+        top: 60px;
+    }
+
+    .condenedorMenuCuadro {
+        width: 500px;
+        margin-left: 65px;
     }
 
     .agrupar {
@@ -393,24 +379,41 @@ ul.cambioBoton {
         width: 200px;
     }
 
-    .condenedorMenuCuadro {
-        width: 500px;
-        margin-left: 65px;
+    .elementos ul {
+        display: none;
+    }
+
+    ul.cambioBoton {
+        font-size: 12px;
+    }
+
+    .flex {
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+
+}
+
+@media(min-width:601px) and (max-width:900px) {
+    body {
+        width: 80%;
+    }
+
+    .elementos h1 {
+        display: none;
     }
 
     .cuadro {
         top: 60px;
     }
 
-}
-
-@media(min-width:601px) and (max-width:900px) {
-
-    .elementos ul {
-        display: none;
+    .condenedorMenuCuadro {
+        width: 410px;
+        margin-left: 250px;
     }
 
-    .elementos h1 {
+    .elementos ul {
         display: none;
     }
 
@@ -422,29 +425,9 @@ ul.cambioBoton {
         width: 450px;
     }
 
-    body {
-        width: 80%;
-    }
-
-    .cuadro {
-        top: 60px;
-    }
-
-    .condenedorMenuCuadro {
-        width: 410px;
-        margin-left: 250px;
-    }
 }
 
 @media(min-width:900px) {
-    #hamburgesa {
-        display: none;
-    }
-
-    .idMovil.mostrarInBlock {
-        display: none;
-    }
-
     .cuadro {
         top: 60px;
     }
@@ -452,6 +435,14 @@ ul.cambioBoton {
     .condenedorMenuCuadro {
         width: 1000px;
         margin-left: 17px;
+    }
+
+    #hamburgesa {
+        display: none;
+    }
+
+    .idMovil.mostrarInBlock {
+        display: none;
     }
 
 }
